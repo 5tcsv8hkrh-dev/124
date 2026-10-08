@@ -1,4 +1,44 @@
-venv/
-.pytest_cache/
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test, type-checker, and build artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.template
+.secrets/
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Real or identifiable data is local-only; keep the placeholder in Git
+/data/real/*
+!/data/real/.gitkeep
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
