@@ -1,0 +1,34 @@
+{
+  "_readme": "Settings for the Version 1 scoring method. All numbers are ARBITRARY starting points chosen for transparency, not values learned from data. Changing any of them changes the research method, so bump 'version' and record the change.",
+  "version": "0.1.0-draft",
+  "method": "rule_based_content_v1",
+  "group_weights": {
+    "interests": 0.40,
+    "skills": 0.25,
+    "preferences": 0.15,
+    "values": 0.10,
+    "learning": 0.10
+  },
+  "bands": [
+    {"id": "strong",      "min_score": 75},
+    {"id": "moderate",    "min_score": 60},
+    {"id": "exploratory", "min_score": 0}
+  ],
+  "selection": {
+    "top_n": 3,
+    "max_per_family": 2,
+    "alternatives_n": 4
+  },
+  "explanation": {
+    "strength_min_fit": 0.85,
+    "strength_min_level": 0.75,
+    "strength_min_preference_clarity": 0.25,
+    "gap_max_fit": 0.60,
+    "max_strengths": 3,
+    "max_gaps": 2
+  },
+  "warnings": {
+    "flat_profile_max_std": 0.12,
+    "close_scores_max_spread": 5.0
+  }
+}

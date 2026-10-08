@@ -1,0 +1,50 @@
+{
+  "_label": "SYNTHETIC DEMO DATA - invented by the developer to exercise the code. These are NOT real students and must never be used as research findings or mixed with real survey data.",
+  "data_source": "demo",
+  "students": [
+    {
+      "demo_id": "demo_tech_independent",
+      "description": "Invented profile: loves technology and problem solving, prefers working alone.",
+      "answers_by_dimension": {
+        "int_technology": 5, "int_mathematics": 4, "int_life_science": 2, "int_art_design": 2, "int_helping_people": 2,
+        "sk_logical": 5, "sk_programming": 5, "sk_math": 4,
+        "pref_independence": 4, "pref_people": 2,
+        "val_innovation": 4,
+        "learn_problems": 5, "learn_doing": 4, "learn_reading": 2
+      }
+    },
+    {
+      "demo_id": "demo_people_caring",
+      "description": "Invented profile: wants to help people, strong communication, curious about human behavior.",
+      "answers_by_dimension": {
+        "int_helping_people": 5, "int_human_behavior": 5, "int_life_science": 4, "int_technology": 2, "int_mathematics": 2,
+        "sk_communication": 5, "sk_programming": 1, "sk_math": 2,
+        "pref_people": 5, "pref_independence": 2,
+        "val_impact": 5,
+        "learn_reading": 4
+      }
+    },
+    {
+      "demo_id": "demo_creative",
+      "description": "Invented profile: artistic, creative, likes open-ended work and variety.",
+      "answers_by_dimension": {
+        "int_art_design": 5, "int_language_communication": 4, "int_mathematics": 2,
+        "sk_creativity": 5, "sk_math": 2, "sk_organization": 2,
+        "pref_structure": 1, "pref_novelty": 5,
+        "val_innovation": 4,
+        "learn_doing": 5
+      }
+    },
+    {
+      "demo_id": "demo_lab_science",
+      "description": "Invented profile: curious about natural science, enjoys lab-style hands-on work and discovery.",
+      "answers_by_dimension": {
+        "int_life_science": 5, "int_physical_science": 5, "int_mathematics": 4, "int_business_economics": 1, "int_language_communication": 2,
+        "sk_logical": 4, "sk_organization": 4,
+        "pref_hands_on": 5,
+        "val_discovery": 5,
+        "learn_doing": 4
+      }
+    }
+  ]
+}
