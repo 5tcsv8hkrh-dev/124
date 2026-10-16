@@ -1,0 +1,178 @@
+{
+  "_readme": "Descriptive content shown in the 'next steps' part of the results. It is general, non-authoritative orientation text written as a DRAFT: it has not been reviewed by people working in each field. It deliberately contains no salaries, job-market forecasts, university rankings or web links, because those change and must be verified before being shown to students. Names of majors differ between universities and countries.",
+  "version": "0.1.0-draft",
+  "status": "DRAFT - not reviewed by domain experts",
+  "fields": {
+    "computer_science": {
+      "subjects":   {"en": ["Mathematics", "Computer science", "Physics"], "ar": ["الرياضيات", "علوم الحاسوب", "الفيزياء"]},
+      "majors":     {"en": ["Computer Science", "Information Technology", "Computational Mathematics"], "ar": ["علوم الحاسوب", "تقنية المعلومات", "الرياضيات الحاسوبية"]},
+      "careers":    {"en": ["Software developer", "Systems analyst", "Computing researcher"], "ar": ["مطوّر برمجيات", "محلل أنظمة", "باحث في علوم الحاسوب"]},
+      "skills":     {"en": ["Problem solving", "Logical thinking", "Learning a programming language"], "ar": ["حل المشكلات", "التفكير المنطقي", "تعلّم لغة برمجة"]},
+      "activities": {"en": ["Try a free beginner programming course", "Build a small project such as a simple game or calculator"], "ar": ["جرّب دورة مجانية للمبتدئين في البرمجة", "ابنِ مشروعًا صغيرًا مثل لعبة بسيطة أو آلة حاسبة"]},
+      "questions":  {"en": ["Do I enjoy spending hours solving abstract problems on a computer?", "How much advanced mathematics am I willing to study?"], "ar": ["هل أستمتع بقضاء ساعات في حل مسائل مجرّدة على الحاسوب؟", "ما مقدار الرياضيات المتقدمة التي أنا مستعد لدراستها؟"]},
+      "related": ["software_engineering", "artificial_intelligence", "data_science", "cybersecurity", "mathematics"]
+    },
+    "software_engineering": {
+      "subjects":   {"en": ["Computer science", "Mathematics", "English (for technical documentation)"], "ar": ["علوم الحاسوب", "الرياضيات", "اللغة الإنجليزية (للتوثيق التقني)"]},
+      "majors":     {"en": ["Software Engineering", "Computer Engineering", "Information Systems"], "ar": ["هندسة البرمجيات", "هندسة الحاسوب", "نظم المعلومات"]},
+      "careers":    {"en": ["Software engineer", "Web or mobile app developer", "Quality assurance engineer"], "ar": ["مهندس برمجيات", "مطوّر تطبيقات الويب أو الجوال", "مهندس ضمان الجودة"]},
+      "skills":     {"en": ["Programming", "Teamwork on shared code", "Planning and organizing tasks"], "ar": ["البرمجة", "العمل الجماعي على شيفرة مشتركة", "تخطيط المهام وتنظيمها"]},
+      "activities": {"en": ["Build a small website or app and share it with friends", "Follow a beginner-friendly open-source project to see how teams work"], "ar": ["ابنِ موقعًا أو تطبيقًا صغيرًا وشاركه مع أصدقائك", "تابع مشروعًا مفتوح المصدر مناسبًا للمبتدئين لترى كيف تعمل الفرق"]},
+      "questions":  {"en": ["Do I like building things step by step and fixing bugs?", "Am I comfortable working in a team on the same project?"], "ar": ["هل أحب بناء الأشياء خطوة بخطوة وإصلاح الأخطاء؟", "هل أرتاح للعمل ضمن فريق على المشروع نفسه؟"]},
+      "related": ["computer_science", "cybersecurity", "artificial_intelligence", "design"]
+    },
+    "cybersecurity": {
+      "subjects":   {"en": ["Computer science", "Mathematics", "Networking basics (if available)"], "ar": ["علوم الحاسوب", "الرياضيات", "أساسيات الشبكات (إن توفرت)"]},
+      "majors":     {"en": ["Cybersecurity", "Computer Science (security track)", "Information Technology"], "ar": ["الأمن السيبراني", "علوم الحاسوب (مسار الأمن)", "تقنية المعلومات"]},
+      "careers":    {"en": ["Security analyst", "Penetration tester", "Security engineer"], "ar": ["محلل أمن المعلومات", "مختبر اختراق", "مهندس أمن"]},
+      "skills":     {"en": ["Attention to detail", "Curiosity about how systems can fail", "Basic networking and programming"], "ar": ["الانتباه للتفاصيل", "الفضول حول كيفية فشل الأنظمة", "أساسيات الشبكات والبرمجة"]},
+      "activities": {"en": ["Try legal, beginner-friendly practice challenges, always ethically and only on systems made for practice", "Learn how passwords and encryption work"], "ar": ["جرّب تحديات تدريبية قانونية للمبتدئين، دائمًا بأسلوب أخلاقي وعلى أنظمة مخصصة للتدريب فقط", "تعرّف على كيفية عمل كلمات المرور والتشفير"]},
+      "questions":  {"en": ["Am I comfortable with the ethics and responsibility of working with sensitive systems?", "Do I enjoy puzzles that need patience?"], "ar": ["هل أرتاح للمسؤولية والأخلاقيات عند التعامل مع أنظمة حساسة؟", "هل أستمتع بالألغاز التي تحتاج إلى صبر؟"]},
+      "related": ["computer_science", "software_engineering", "law"]
+    },
+    "artificial_intelligence": {
+      "subjects":   {"en": ["Mathematics (algebra and statistics)", "Computer science", "Physics"], "ar": ["الرياضيات (الجبر والإحصاء)", "علوم الحاسوب", "الفيزياء"]},
+      "majors":     {"en": ["Artificial Intelligence", "Computer Science", "Data Science"], "ar": ["الذكاء الاصطناعي", "علوم الحاسوب", "علم البيانات"]},
+      "careers":    {"en": ["Machine learning engineer", "AI researcher", "Applied AI developer"], "ar": ["مهندس تعلّم الآلة", "باحث في الذكاء الاصطناعي", "مطوّر تطبيقات الذكاء الاصطناعي"]},
+      "skills":     {"en": ["Mathematics and statistics", "Programming", "Thinking critically about data and results"], "ar": ["الرياضيات والإحصاء", "البرمجة", "التفكير النقدي في البيانات والنتائج"]},
+      "activities": {"en": ["Take an introductory machine learning course", "Try a small project with a public dataset"], "ar": ["خذ دورة تمهيدية في تعلّم الآلة", "جرّب مشروعًا صغيرًا باستخدام مجموعة بيانات عامة"]},
+      "questions":  {"en": ["Do I enjoy mathematics and abstract ideas enough for years of study?", "Am I interested in the ethical questions around AI?"], "ar": ["هل أستمتع بالرياضيات والأفكار المجرّدة بما يكفي لسنوات من الدراسة؟", "هل تهمني الأسئلة الأخلاقية المتعلقة بالذكاء الاصطناعي؟"]},
+      "related": ["data_science", "computer_science", "mathematics", "software_engineering"]
+    },
+    "data_science": {
+      "subjects":   {"en": ["Mathematics and statistics", "Computer science", "A field to apply data to, such as economics or biology"], "ar": ["الرياضيات والإحصاء", "علوم الحاسوب", "مجال لتطبيق البيانات عليه مثل الاقتصاد أو الأحياء"]},
+      "majors":     {"en": ["Data Science", "Statistics", "Computer Science"], "ar": ["علم البيانات", "الإحصاء", "علوم الحاسوب"]},
+      "careers":    {"en": ["Data analyst", "Data scientist", "Business intelligence analyst"], "ar": ["محلل بيانات", "عالم بيانات", "محلل ذكاء الأعمال"]},
+      "skills":     {"en": ["Statistics", "Spreadsheets and programming", "Explaining findings clearly"], "ar": ["الإحصاء", "الجداول الإلكترونية والبرمجة", "شرح النتائج بوضوح"]},
+      "activities": {"en": ["Analyze a small public dataset, such as sports or school statistics, and write what you found", "Learn spreadsheets first, then a beginner data tool"], "ar": ["حلّل مجموعة بيانات عامة صغيرة، مثل إحصاءات رياضية أو مدرسية، واكتب ما توصلت إليه", "تعلّم الجداول الإلكترونية أولًا ثم أداة مبتدئة لتحليل البيانات"]},
+      "questions":  {"en": ["Do I enjoy finding patterns in numbers?", "Can I explain results to people who are not experts?"], "ar": ["هل أستمتع بإيجاد الأنماط في الأرقام؟", "هل أستطيع شرح النتائج لأشخاص غير متخصصين؟"]},
+      "related": ["artificial_intelligence", "economics", "mathematics", "computer_science"]
+    },
+    "medicine": {
+      "subjects":   {"en": ["Biology", "Chemistry", "Physics"], "ar": ["الأحياء", "الكيمياء", "الفيزياء"]},
+      "majors":     {"en": ["Medicine", "Pharmacy", "Nursing"], "ar": ["الطب", "الصيدلة", "التمريض"]},
+      "careers":    {"en": ["Doctor", "Pharmacist", "Nurse"], "ar": ["طبيب", "صيدلي", "ممرض"]},
+      "skills":     {"en": ["Communication and empathy", "Studying large amounts of material", "Staying calm under pressure"], "ar": ["التواصل والتعاطف", "دراسة كميات كبيرة من المواد", "الحفاظ على الهدوء تحت الضغط"]},
+      "activities": {"en": ["Talk to a doctor, nurse or pharmacist about their daily work", "Volunteer in a health-related setting if it is suitable for your age"], "ar": ["تحدّث مع طبيب أو ممرض أو صيدلي عن عمله اليومي", "تطوّع في مكان متصل بالصحة إن كان مناسبًا لعمرك"]},
+      "questions":  {"en": ["Am I ready for long years of study and demanding schedules?", "Do I find working with people who are sick or stressed meaningful rather than draining?"], "ar": ["هل أنا مستعد لسنوات دراسة طويلة وجداول عمل مرهقة؟", "هل أجد العمل مع أشخاص مرضى أو متوترين ذا معنى وليس مُنهِكًا؟"]},
+      "related": ["biotechnology", "psychology", "environmental_science"]
+    },
+    "engineering": {
+      "subjects":   {"en": ["Mathematics", "Physics", "Chemistry (for some branches)"], "ar": ["الرياضيات", "الفيزياء", "الكيمياء (لبعض الفروع)"]},
+      "majors":     {"en": ["Civil Engineering", "Electrical Engineering", "Mechanical Engineering"], "ar": ["الهندسة المدنية", "الهندسة الكهربائية", "الهندسة الميكانيكية"]},
+      "careers":    {"en": ["Civil engineer", "Electrical engineer", "Mechanical engineer"], "ar": ["مهندس مدني", "مهندس كهربائي", "مهندس ميكانيكي"]},
+      "skills":     {"en": ["Applied mathematics", "Technical drawing and modeling", "Teamwork on projects"], "ar": ["الرياضيات التطبيقية", "الرسم الفني والنمذجة", "العمل الجماعي في المشاريع"]},
+      "activities": {"en": ["Build a simple model or device, such as a small circuit or a cardboard bridge", "Watch interviews with engineers from different branches"], "ar": ["ابنِ نموذجًا أو جهازًا بسيطًا، مثل دائرة كهربائية صغيرة أو جسر من الكرتون", "شاهد مقابلات مع مهندسين من فروع مختلفة"]},
+      "questions":  {"en": ["Which branch of engineering interests me most, and why?", "Am I comfortable with a lot of mathematics and physics?"], "ar": ["أي فرع من فروع الهندسة يهمني أكثر، ولماذا؟", "هل أرتاح لكمية كبيرة من الرياضيات والفيزياء؟"]},
+      "related": ["architecture", "physical_sciences", "computer_science", "mathematics"]
+    },
+    "architecture": {
+      "subjects":   {"en": ["Art and drawing", "Mathematics", "Physics"], "ar": ["الفنون والرسم", "الرياضيات", "الفيزياء"]},
+      "majors":     {"en": ["Architecture", "Interior Architecture", "Urban Planning"], "ar": ["العمارة", "العمارة الداخلية", "التخطيط العمراني"]},
+      "careers":    {"en": ["Architect", "Urban planner", "Interior designer"], "ar": ["مهندس معماري", "مخطط عمراني", "مصمم داخلي"]},
+      "skills":     {"en": ["Drawing and visualization", "Creative problem solving", "Presenting ideas"], "ar": ["الرسم والتصور البصري", "حل المشكلات بطريقة إبداعية", "عرض الأفكار"]},
+      "activities": {"en": ["Sketch a room or building you know and redesign it", "Walk around your city and note which buildings and spaces you like, and why"], "ar": ["ارسم غرفة أو مبنى تعرفه وأعد تصميمه", "تجوّل في مدينتك ودوّن المباني والأماكن التي تعجبك ولماذا"]},
+      "questions":  {"en": ["Am I willing to spend long hours on design studio work?", "Do I enjoy both art and technical limits?"], "ar": ["هل أنا مستعد لقضاء ساعات طويلة في أعمال استوديو التصميم؟", "هل أستمتع بالفن وبالقيود التقنية معًا؟"]},
+      "related": ["design", "engineering", "environmental_science"]
+    },
+    "design": {
+      "subjects":   {"en": ["Art and drawing", "Computer skills", "Languages (for communicating ideas)"], "ar": ["الفنون والرسم", "مهارات الحاسوب", "اللغات (لتوصيل الأفكار)"]},
+      "majors":     {"en": ["Graphic Design", "Product Design", "Interaction (UX) Design"], "ar": ["التصميم الجرافيكي", "تصميم المنتجات", "تصميم تجربة المستخدم"]},
+      "careers":    {"en": ["Graphic designer", "UX designer", "Product designer"], "ar": ["مصمم جرافيك", "مصمم تجربة مستخدم", "مصمم منتجات"]},
+      "skills":     {"en": ["Drawing or digital design tools", "Understanding users", "Presenting and explaining ideas"], "ar": ["الرسم أو أدوات التصميم الرقمي", "فهم المستخدمين", "عرض الأفكار وشرحها"]},
+      "activities": {"en": ["Redesign a poster or an app screen and explain your choices", "Collect designs you admire and write down why you like them"], "ar": ["أعد تصميم ملصق أو شاشة تطبيق واشرح خياراتك", "اجمع تصاميم تعجبك واكتب لماذا تحبها"]},
+      "questions":  {"en": ["Can I accept feedback and revise my work many times?", "Do I prefer visual work or work on interactive products?"], "ar": ["هل أستطيع تقبّل الملاحظات وتعديل عملي مرات عديدة؟", "هل أفضّل العمل البصري أم العمل على المنتجات التفاعلية؟"]},
+      "related": ["architecture", "media", "software_engineering"]
+    },
+    "business": {
+      "subjects":   {"en": ["Mathematics", "Economics", "Languages (for communication)"], "ar": ["الرياضيات", "الاقتصاد", "اللغات (للتواصل)"]},
+      "majors":     {"en": ["Business Administration", "Marketing", "Management"], "ar": ["إدارة الأعمال", "التسويق", "الإدارة"]},
+      "careers":    {"en": ["Business analyst", "Marketing specialist", "Project manager"], "ar": ["محلل أعمال", "أخصائي تسويق", "مدير مشاريع"]},
+      "skills":     {"en": ["Communication", "Organization and planning", "Understanding customers and numbers"], "ar": ["التواصل", "التنظيم والتخطيط", "فهم العملاء والأرقام"]},
+      "activities": {"en": ["Plan a small imaginary business with costs and prices", "Interview someone who runs a business"], "ar": ["خطّط لمشروع صغير افتراضي مع التكاليف والأسعار", "أجرِ مقابلة مع شخص يدير عملًا تجاريًا"]},
+      "questions":  {"en": ["Do I enjoy leading or coordinating other people?", "Which area interests me most: marketing, finance or operations?"], "ar": ["هل أستمتع بقيادة الآخرين أو تنسيق عملهم؟", "أي مجال يهمني أكثر: التسويق أم المالية أم العمليات؟"]},
+      "related": ["economics", "law", "media", "data_science"]
+    },
+    "economics": {
+      "subjects":   {"en": ["Mathematics", "Economics", "Statistics or social studies"], "ar": ["الرياضيات", "الاقتصاد", "الإحصاء أو الدراسات الاجتماعية"]},
+      "majors":     {"en": ["Economics", "Finance", "Applied Statistics"], "ar": ["الاقتصاد", "المالية", "الإحصاء التطبيقي"]},
+      "careers":    {"en": ["Economist", "Financial analyst", "Policy analyst"], "ar": ["اقتصادي", "محلل مالي", "محلل سياسات"]},
+      "skills":     {"en": ["Quantitative reasoning", "Writing analytical reports", "Thinking critically about evidence"], "ar": ["التفكير الكمي", "كتابة التقارير التحليلية", "التفكير النقدي في الأدلة"]},
+      "activities": {"en": ["Follow a news story about prices or jobs and explain its causes in your own words", "Try a free introductory economics course"], "ar": ["تابع خبرًا عن الأسعار أو الوظائف واشرح أسبابه بكلماتك", "جرّب دورة مجانية تمهيدية في الاقتصاد"]},
+      "questions":  {"en": ["Do I enjoy abstract models of how people and markets behave?", "Am I comfortable with statistics?"], "ar": ["هل أستمتع بالنماذج المجرّدة لسلوك الناس والأسواق؟", "هل أرتاح للإحصاء؟"]},
+      "related": ["business", "data_science", "law", "mathematics"]
+    },
+    "psychology": {
+      "subjects":   {"en": ["Biology", "Social studies", "Statistics", "Languages"], "ar": ["الأحياء", "الدراسات الاجتماعية", "الإحصاء", "اللغات"]},
+      "majors":     {"en": ["Psychology", "Counseling", "Educational Psychology"], "ar": ["علم النفس", "الإرشاد النفسي", "علم النفس التربوي"]},
+      "careers":    {"en": ["Psychologist (after the training and licensing your country requires)", "Counselor", "Researcher"], "ar": ["أخصائي نفسي (بعد التدريب والترخيص اللذين تشترطهما دولتك)", "مرشد نفسي", "باحث"]},
+      "skills":     {"en": ["Listening", "Reading research critically", "Empathy and ethics"], "ar": ["الإصغاء", "قراءة الأبحاث بنظرة نقدية", "التعاطف والأخلاقيات"]},
+      "activities": {"en": ["Read an introductory psychology book or watch introductory lectures", "Learn how psychology experiments are designed and judged"], "ar": ["اقرأ كتابًا تمهيديًا في علم النفس أو شاهد محاضرات تمهيدية", "تعرّف على كيفية تصميم التجارب النفسية وتقييمها"]},
+      "questions":  {"en": ["Do I understand that psychology involves science and statistics, not only listening?", "What training or licensing does my country require for the roles I imagine?"], "ar": ["هل أدرك أن علم النفس يتضمن العلم والإحصاء وليس الإصغاء فقط؟", "ما التدريب أو الترخيص الذي تشترطه دولتي للأدوار التي أتخيلها؟"]},
+      "related": ["education", "medicine", "business"]
+    },
+    "law": {
+      "subjects":   {"en": ["Languages (Arabic and English)", "History and civics", "Debate and logic"], "ar": ["اللغات (العربية والإنجليزية)", "التاريخ والتربية الوطنية", "المناظرة والمنطق"]},
+      "majors":     {"en": ["Law", "Legal Studies", "International Law"], "ar": ["القانون", "الدراسات القانونية", "القانون الدولي"]},
+      "careers":    {"en": ["Lawyer", "Legal adviser", "Judge or prosecutor (after the path your country requires)"], "ar": ["محامٍ", "مستشار قانوني", "قاضٍ أو وكيل نيابة (بعد المسار الذي تشترطه دولتك)"]},
+      "skills":     {"en": ["Careful, detailed reading", "Clear writing and speaking", "Building arguments from evidence"], "ar": ["القراءة الدقيقة والمفصّلة", "الكتابة والتحدث بوضوح", "بناء الحجج من الأدلة"]},
+      "activities": {"en": ["Attend or watch a public debate or a mock trial", "Read a simple case summary and explain each side's arguments"], "ar": ["احضر أو شاهد مناظرة عامة أو محاكمة صورية", "اقرأ ملخص قضية بسيطة واشرح حجج كل طرف"]},
+      "questions":  {"en": ["Am I comfortable with a lot of reading and precise language?", "Which area of law interests me?"], "ar": ["هل أرتاح لكمية كبيرة من القراءة واللغة الدقيقة؟", "أي مجال من مجالات القانون يهمني؟"]},
+      "related": ["business", "economics", "media", "cybersecurity"]
+    },
+    "media": {
+      "subjects":   {"en": ["Languages", "Social studies and history", "Computer skills (for editing)"], "ar": ["اللغات", "الدراسات الاجتماعية والتاريخ", "مهارات الحاسوب (للمونتاج)"]},
+      "majors":     {"en": ["Mass Communication", "Journalism", "Digital Media"], "ar": ["الاتصال الجماهيري", "الصحافة", "الإعلام الرقمي"]},
+      "careers":    {"en": ["Journalist", "Content producer", "Public relations specialist"], "ar": ["صحفي", "منتج محتوى", "أخصائي علاقات عامة"]},
+      "skills":     {"en": ["Writing", "Interviewing", "Basic photo and video editing"], "ar": ["الكتابة", "إجراء المقابلات", "أساسيات تحرير الصور والفيديو"]},
+      "activities": {"en": ["Write or record a short piece about your school or neighborhood", "Learn basic video editing with free tools"], "ar": ["اكتب أو سجّل مادة قصيرة عن مدرستك أو حيّك", "تعلّم أساسيات المونتاج بأدوات مجانية"]},
+      "questions":  {"en": ["Am I comfortable with deadlines and public feedback?", "Which format fits me best: writing, video, audio or social media?"], "ar": ["هل أرتاح للمواعيد النهائية وللتعليقات العلنية؟", "أي صيغة تناسبني أكثر: الكتابة أم الفيديو أم الصوت أم وسائل التواصل؟"]},
+      "related": ["design", "education", "business", "law"]
+    },
+    "education": {
+      "subjects":   {"en": ["The subject you would like to teach", "Psychology basics", "Languages"], "ar": ["المادة التي تودّ تدريسها", "أساسيات علم النفس", "اللغات"]},
+      "majors":     {"en": ["Education (primary or secondary)", "Special Education", "Educational Technology"], "ar": ["التربية (المرحلة الابتدائية أو الثانوية)", "التربية الخاصة", "تقنيات التعليم"]},
+      "careers":    {"en": ["Teacher", "Curriculum designer", "School counselor (with the required qualifications)"], "ar": ["معلم", "مصمم مناهج", "مرشد مدرسي (بالمؤهلات المطلوبة)"]},
+      "skills":     {"en": ["Explaining clearly", "Patience", "Classroom organization"], "ar": ["الشرح بوضوح", "الصبر", "تنظيم الصف"]},
+      "activities": {"en": ["Help a younger student with a subject you like", "Plan a short lesson and teach it to friends or family"], "ar": ["ساعد طالبًا أصغر منك في مادة تحبها", "خطّط لدرس قصير وقدّمه لأصدقائك أو عائلتك"]},
+      "questions":  {"en": ["Which age group and subject would I enjoy teaching?", "Do I understand the working conditions and career path for teachers in my country?"], "ar": ["أي فئة عمرية ومادة سأستمتع بتدريسها؟", "هل أفهم ظروف العمل والمسار المهني للمعلمين في بلدي؟"]},
+      "related": ["psychology", "media"]
+    },
+    "biotechnology": {
+      "subjects":   {"en": ["Biology", "Chemistry", "Mathematics"], "ar": ["الأحياء", "الكيمياء", "الرياضيات"]},
+      "majors":     {"en": ["Biotechnology", "Biomedical Sciences", "Genetics"], "ar": ["التقنية الحيوية", "العلوم الطبية الحيوية", "علم الوراثة"]},
+      "careers":    {"en": ["Laboratory researcher", "Quality control specialist", "Research scientist"], "ar": ["باحث مختبرات", "أخصائي مراقبة الجودة", "عالم أبحاث"]},
+      "skills":     {"en": ["Careful laboratory work", "Recording and analyzing data", "Patience with repeated experiments"], "ar": ["العمل المخبري الدقيق", "تسجيل البيانات وتحليلها", "الصبر على التجارب المتكررة"]},
+      "activities": {"en": ["Do safe science experiments at school with a teacher", "Read about how vaccines, medicines or crops are developed"], "ar": ["أجرِ تجارب علمية آمنة في المدرسة بإشراف معلم", "اقرأ عن كيفية تطوير اللقاحات أو الأدوية أو المحاصيل"]},
+      "questions":  {"en": ["Do I enjoy slow, careful laboratory-style work?", "Am I open to further study, which many research roles may require?"], "ar": ["هل أستمتع بالعمل المخبري البطيء والدقيق؟", "هل أنا منفتح على دراسة أطول قد تتطلبها كثير من وظائف البحث؟"]},
+      "related": ["medicine", "environmental_science", "physical_sciences"]
+    },
+    "environmental_science": {
+      "subjects":   {"en": ["Biology", "Chemistry", "Geography"], "ar": ["الأحياء", "الكيمياء", "الجغرافيا"]},
+      "majors":     {"en": ["Environmental Science", "Environmental Engineering", "Earth Sciences"], "ar": ["علوم البيئة", "الهندسة البيئية", "علوم الأرض"]},
+      "careers":    {"en": ["Environmental scientist", "Environmental consultant", "Conservation officer"], "ar": ["عالم بيئة", "مستشار بيئي", "مسؤول حماية الطبيعة"]},
+      "skills":     {"en": ["Field observation", "Data analysis", "Explaining issues to the public"], "ar": ["الملاحظة الميدانية", "تحليل البيانات", "شرح القضايا للجمهور"]},
+      "activities": {"en": ["Track something local, such as waste or water use, and record it for a month", "Join a school or community clean-up or tree-planting activity"], "ar": ["تابع شيئًا محليًا مثل النفايات أو استهلاك المياه وسجّله لمدة شهر", "شارك في نشاط مدرسي أو مجتمعي للتنظيف أو زراعة الأشجار"]},
+      "questions":  {"en": ["Am I comfortable with outdoor or field work in different weather?", "Do I want to work on science, policy or practical projects?"], "ar": ["هل أرتاح للعمل في الهواء الطلق أو الميدان في أجواء مختلفة؟", "هل أرغب في العمل على العلم أم السياسات أم المشاريع العملية؟"]},
+      "related": ["biotechnology", "engineering", "physical_sciences"]
+    },
+    "mathematics": {
+      "subjects":   {"en": ["Mathematics", "Physics", "Computer science"], "ar": ["الرياضيات", "الفيزياء", "علوم الحاسوب"]},
+      "majors":     {"en": ["Mathematics", "Applied Mathematics", "Statistics"], "ar": ["الرياضيات", "الرياضيات التطبيقية", "الإحصاء"]},
+      "careers":    {"en": ["Statistician", "Researcher", "Mathematics teacher"], "ar": ["إحصائي", "باحث", "معلم رياضيات"]},
+      "skills":     {"en": ["Step-by-step logical proof", "Persistence with hard problems", "Clear written explanations"], "ar": ["البرهان المنطقي خطوة بخطوة", "المثابرة على المسائل الصعبة", "الشرح المكتوب الواضح"]},
+      "activities": {"en": ["Try problems from a mathematics competition for your age group", "Read about a famous unsolved problem and explain it simply"], "ar": ["جرّب مسائل من مسابقة رياضيات لفئتك العمرية", "اقرأ عن مسألة شهيرة لم تُحل واشرحها ببساطة"]},
+      "questions":  {"en": ["Do I enjoy staying with one problem for days?", "What would I want to do with mathematics: research, teaching or applications?"], "ar": ["هل أستمتع بالبقاء مع مسألة واحدة لأيام؟", "ماذا أريد أن أفعل بالرياضيات: البحث أم التدريس أم التطبيقات؟"]},
+      "related": ["physical_sciences", "computer_science", "artificial_intelligence", "data_science", "economics"]
+    },
+    "physical_sciences": {
+      "subjects":   {"en": ["Physics", "Chemistry", "Mathematics"], "ar": ["الفيزياء", "الكيمياء", "الرياضيات"]},
+      "majors":     {"en": ["Physics", "Chemistry", "Materials Science"], "ar": ["الفيزياء", "الكيمياء", "علوم المواد"]},
+      "careers":    {"en": ["Physicist or chemist in research or industry", "Laboratory scientist", "Science teacher"], "ar": ["فيزيائي أو كيميائي في البحث أو الصناعة", "عالم مختبر", "معلم علوم"]},
+      "skills":     {"en": ["Mathematical modeling", "Careful experiments", "Reading scientific texts"], "ar": ["النمذجة الرياضية", "التجارب الدقيقة", "قراءة النصوص العلمية"]},
+      "activities": {"en": ["Do a safe experiment and compare the result with the theory", "Watch lectures or read popular science about a topic you find fascinating"], "ar": ["أجرِ تجربة آمنة وقارن نتيجتها بالنظرية", "شاهد محاضرات أو اقرأ علمًا مبسّطًا عن موضوع يشدّك"]},
+      "questions":  {"en": ["Do I prefer theory, experiments, or both?", "Am I willing to study for many years, since research roles often need advanced degrees?"], "ar": ["هل أفضّل النظرية أم التجارب أم كليهما؟", "هل أنا مستعد للدراسة سنوات طويلة، إذ تتطلب وظائف البحث غالبًا شهادات عليا؟"]},
+      "related": ["engineering", "mathematics", "biotechnology"]
+    }
+  }
+}

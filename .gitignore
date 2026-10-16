@@ -19,6 +19,10 @@ build/
 dist/
 *.egg-info/
 
+# Node dependencies and logs
+node_modules/
+npm-debug.log*
+
 # Environment variables and credentials
 .env
 .env.*
@@ -39,6 +43,8 @@ credentials/
 # Local editor and OS files
 .DS_Store
 .idea/
-.vscode/
+.vscode/*
+!.vscode/extensions.json
 *.swp
 *.swo
+Thumbs.db

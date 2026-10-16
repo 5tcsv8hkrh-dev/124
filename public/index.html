@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masarat - explore fields that may fit you</title>
+  <meta name="description" content="A bilingual (Arabic/English) tool that helps students explore academic and career fields that may fit their interests, strengths and preferences.">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip_link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/" id="brand-link">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M4 16 C12 16 14 6 28 6" />
+          <path d="M4 16 H28" />
+          <path d="M4 16 C12 16 14 26 28 26" />
+          <circle cx="4" cy="16" r="2.6" />
+        </svg>
+        <span class="brand-name" data-i18n="app_name">Masarat</span>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang_group_label">
+        <button type="button" id="lang-en" lang="en" aria-pressed="true">English</button>
+        <button type="button" id="lang-ar" lang="ar" aria-pressed="false">العربية</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- HOME -->
+    <section id="view-home" class="view" aria-labelledby="home-title">
+      <div class="wrap hero">
+        <div class="hero-text">
+          <h1 id="home-title" tabindex="-1" data-i18n="home_title">Discover fields that may fit your interests, strengths, and preferences.</h1>
+          <p class="lead" data-i18n="home_lead">Answer 27 short questions. You will get several fields to explore, the reasons they came up, and practical next steps. There is no single "right" answer for you.</p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-large" id="btn-start" data-i18n="start_button">Start the assessment</button>
+          </div>
+          <div class="ai-option" id="ai-option" hidden>
+            <label class="check">
+              <input type="checkbox" id="use-ai" checked>
+              <span data-i18n="ai_option_label">Use AI-written explanations (optional)</span>
+            </label>
+            <p class="small muted" data-i18n="ai_option_help">If you keep this on, only your anonymous ratings and the field scores are sent to Google Gemini to write the explanations. No name or text you typed is sent, because the app has no free-text boxes. If you turn it off, the app writes the explanations itself.</p>
+          </div>
+        </div>
+        <svg class="paths-art" viewBox="0 0 360 260" aria-hidden="true" focusable="false">
+          <path class="p1" d="M44 130 C130 130 170 34 316 34" />
+          <path class="p2" d="M44 130 C140 130 200 96 316 100" />
+          <path class="p3" d="M44 130 C140 130 200 166 316 170" />
+          <path class="p4" d="M44 130 C130 130 170 226 316 226" />
+          <circle class="origin" cx="44" cy="130" r="11" />
+          <circle class="end e1" cx="316" cy="34" r="7" />
+          <circle class="end e2" cx="316" cy="100" r="7" />
+          <circle class="end e3" cx="316" cy="170" r="7" />
+          <circle class="end e4" cx="316" cy="226" r="7" />
+        </svg>
+      </div>
+
+      <div class="wrap">
+        <h2 class="section-title" data-i18n="home_facts_title">Before you start</h2>
+        <dl class="facts">
+          <div class="fact">
+            <dt data-i18n="fact_time_title">About 8 minutes</dt>
+            <dd data-i18n="fact_time_text">27 questions, one at a time. You can go back and change an answer.</dd>
+          </div>
+          <div class="fact">
+            <dt data-i18n="fact_result_title">Several options, not one</dt>
+            <dd data-i18n="fact_result_text">Your results list fields to explore with reasons, subjects, example majors and questions to ask yourself.</dd>
+          </div>
+          <div class="fact">
+            <dt data-i18n="fact_privacy_title">Nothing personal is stored</dt>
+            <dd data-i18n="fact_privacy_text">We do not ask for your name, email or any personal details, and your answers are not saved on the server.</dd>
+          </div>
+        </dl>
+        <p class="notice" data-i18n="prototype_note">This is a research prototype. It is not a psychological test or a professional career assessment, and it has not been scientifically validated.</p>
+      </div>
+    </section>
+
+    <!-- ASSESSMENT -->
+    <section id="view-assess" class="view" aria-labelledby="progress-count" hidden>
+      <div class="wrap narrow">
+        <div class="progress">
+          <div class="progress-meta">
+            <h2 id="progress-count" class="progress-count" tabindex="-1"></h2>
+            <p id="progress-group" class="progress-group"></p>
+          </div>
+          <div id="progress-track" class="track" role="progressbar" aria-valuemin="0" aria-valuemax="27" aria-valuenow="0" aria-labelledby="progress-count"></div>
+        </div>
+
+        <form id="question-form" novalidate>
+          <fieldset class="question">
+            <legend id="question-text"></legend>
+            <p id="scale-hint" class="small muted"></p>
+            <div id="anchors" class="anchors" hidden>
+              <span id="anchor-low"></span>
+              <span id="anchor-high"></span>
+            </div>
+            <div id="options" class="options"></div>
+            <p id="answer-hint" class="field-error" role="alert" hidden></p>
+          </fieldset>
+          <div class="nav-row">
+            <button type="button" id="btn-back" class="btn btn-quiet" data-i18n="back">Back</button>
+            <button type="submit" id="btn-next" class="btn btn-primary" data-i18n="next">Next</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- LOADING -->
+    <section id="view-loading" class="view" hidden>
+      <div class="wrap narrow center">
+        <div class="spinner" aria-hidden="true"></div>
+        <h2 id="loading-title" tabindex="-1" data-i18n="loading_title">Finding fields for you to explore</h2>
+        <p role="status" id="loading-text" class="muted" data-i18n="loading_text">Working out which fields match your answers. This can take a few seconds if AI explanations are on.</p>
+      </div>
+    </section>
+
+    <!-- RESULTS (filled by results.js) -->
+    <section id="view-results" class="view" hidden></section>
+
+    <!-- ERROR -->
+    <section id="view-error" class="view" hidden>
+      <div class="wrap narrow">
+        <div class="error-box" role="alert">
+          <h2 id="error-title" tabindex="-1" data-i18n="error_title">Something went wrong</h2>
+          <p id="error-message"></p>
+          <div class="nav-row">
+            <button type="button" id="btn-error-home" class="btn btn-quiet" data-i18n="back_home">Back to start</button>
+            <button type="button" id="btn-error-retry" class="btn btn-primary" data-i18n="try_again">Try again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p data-i18n="footer_disclaimer">This result is an exploration tool, not a professional diagnosis or a guarantee of career success.</p>
+      <p class="muted" data-i18n="footer_privacy">No personal information is requested or stored.</p>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js"></script>
+  <script src="/js/dom.js"></script>
+  <script src="/js/questionnaire.js"></script>
+  <script src="/js/results.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
