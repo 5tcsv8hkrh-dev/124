@@ -1,0 +1,190 @@
+{
+  "_readme": "Field profiles used by the scoring engine. Each profile entry is 'dimension_id': [target, weight]. target = how strongly the student should show this dimension (0 to 1). weight = how important it is for this field (1 = minor, 2 = important, 3 = core). These numbers are INITIAL EXPERT-JUDGMENT ESTIMATES. They have NOT been reviewed by domain experts or validated against data. Treat them as the main scientific assumption of Version 1 and revise them with experts and survey data. 'family' is only used to avoid a top-3 made of near-duplicates.",
+  "version": "0.1.0-draft",
+  "status": "DRAFT - weights not reviewed or validated",
+  "fields": {
+    "computer_science": {
+      "family": "computing", "name_en": "Computer Science", "name_ar": "علوم الحاسوب",
+      "profile": {
+        "int_technology": [0.8, 3], "int_mathematics": [0.6, 2],
+        "sk_logical": [0.8, 3], "sk_programming": [0.7, 3], "sk_math": [0.6, 2],
+        "pref_independence": [0.6, 1], "pref_people": [0.3, 1],
+        "val_innovation": [0.6, 1],
+        "learn_problems": [0.7, 2], "learn_doing": [0.6, 1]
+      }
+    },
+    "software_engineering": {
+      "family": "computing", "name_en": "Software Engineering", "name_ar": "هندسة البرمجيات",
+      "profile": {
+        "int_technology": [0.8, 3],
+        "sk_programming": [0.8, 3], "sk_logical": [0.7, 2], "sk_organization": [0.6, 2],
+        "pref_hands_on": [0.6, 1], "pref_structure": [0.6, 1],
+        "val_innovation": [0.6, 1],
+        "learn_doing": [0.8, 2], "learn_problems": [0.7, 1]
+      }
+    },
+    "cybersecurity": {
+      "family": "computing", "name_en": "Cybersecurity", "name_ar": "الأمن السيبراني",
+      "profile": {
+        "int_technology": [0.8, 3],
+        "sk_logical": [0.8, 3], "sk_programming": [0.6, 2], "sk_organization": [0.7, 2],
+        "pref_independence": [0.6, 1], "pref_hands_on": [0.7, 1], "pref_novelty": [0.7, 1],
+        "learn_problems": [0.8, 2], "learn_doing": [0.7, 2]
+      }
+    },
+    "artificial_intelligence": {
+      "family": "computing", "name_en": "Artificial Intelligence", "name_ar": "الذكاء الاصطناعي",
+      "profile": {
+        "int_technology": [0.8, 3], "int_mathematics": [0.8, 3],
+        "sk_math": [0.8, 3], "sk_logical": [0.8, 2], "sk_programming": [0.7, 2],
+        "pref_hands_on": [0.4, 1],
+        "val_innovation": [0.7, 2], "val_discovery": [0.6, 1],
+        "learn_problems": [0.7, 1], "learn_reading": [0.5, 1]
+      }
+    },
+    "data_science": {
+      "family": "computing", "name_en": "Data Science", "name_ar": "علم البيانات",
+      "profile": {
+        "int_technology": [0.7, 2], "int_mathematics": [0.7, 3], "int_business_economics": [0.5, 1],
+        "sk_math": [0.7, 3], "sk_logical": [0.7, 2], "sk_programming": [0.6, 2], "sk_communication": [0.5, 1],
+        "pref_people": [0.3, 1], "pref_structure": [0.6, 1],
+        "learn_problems": [0.7, 1]
+      }
+    },
+    "medicine": {
+      "family": "health_life", "name_en": "Medicine and Health Sciences", "name_ar": "الطب والعلوم الصحية",
+      "profile": {
+        "int_life_science": [0.9, 3], "int_helping_people": [0.8, 3],
+        "sk_organization": [0.7, 2], "sk_communication": [0.6, 2], "sk_logical": [0.6, 1],
+        "pref_people": [0.8, 2], "pref_independence": [0.3, 1], "pref_hands_on": [0.6, 1], "pref_structure": [0.6, 1],
+        "val_impact": [0.8, 2],
+        "learn_reading": [0.7, 2]
+      }
+    },
+    "engineering": {
+      "family": "engineering_built", "name_en": "Engineering", "name_ar": "الهندسة",
+      "profile": {
+        "int_physical_science": [0.8, 3], "int_mathematics": [0.7, 2], "int_technology": [0.6, 2],
+        "sk_logical": [0.7, 3], "sk_math": [0.7, 2], "sk_creativity": [0.5, 1],
+        "pref_hands_on": [0.8, 2], "pref_structure": [0.6, 1],
+        "val_innovation": [0.6, 1],
+        "learn_doing": [0.7, 2], "learn_problems": [0.8, 2]
+      }
+    },
+    "architecture": {
+      "family": "engineering_built", "name_en": "Architecture", "name_ar": "العمارة",
+      "profile": {
+        "int_art_design": [0.8, 3], "int_mathematics": [0.5, 1],
+        "sk_creativity": [0.8, 3], "sk_organization": [0.6, 1],
+        "pref_hands_on": [0.7, 1], "pref_structure": [0.4, 1], "pref_novelty": [0.7, 1],
+        "val_innovation": [0.6, 1],
+        "learn_doing": [0.7, 2], "learn_problems": [0.6, 1]
+      }
+    },
+    "design": {
+      "family": "creative_communication", "name_en": "Design (graphic, product, UX)", "name_ar": "التصميم",
+      "profile": {
+        "int_art_design": [0.9, 3], "int_technology": [0.5, 1], "int_human_behavior": [0.5, 1],
+        "sk_creativity": [0.9, 3], "sk_communication": [0.5, 1],
+        "pref_structure": [0.3, 2], "pref_novelty": [0.8, 2],
+        "learn_doing": [0.8, 2]
+      }
+    },
+    "business": {
+      "family": "business_law", "name_en": "Business and Management", "name_ar": "إدارة الأعمال",
+      "profile": {
+        "int_business_economics": [0.8, 3],
+        "sk_communication": [0.7, 2], "sk_organization": [0.6, 1],
+        "pref_people": [0.7, 2], "pref_independence": [0.3, 1], "pref_novelty": [0.7, 1],
+        "val_innovation": [0.5, 1],
+        "learn_doing": [0.6, 1], "learn_problems": [0.5, 1]
+      }
+    },
+    "economics": {
+      "family": "business_law", "name_en": "Economics", "name_ar": "الاقتصاد",
+      "profile": {
+        "int_business_economics": [0.8, 3], "int_mathematics": [0.6, 2], "int_human_behavior": [0.6, 1],
+        "sk_math": [0.7, 2], "sk_logical": [0.7, 2],
+        "pref_people": [0.4, 1],
+        "val_discovery": [0.5, 1],
+        "learn_reading": [0.6, 1], "learn_problems": [0.6, 1]
+      }
+    },
+    "psychology": {
+      "family": "people_human", "name_en": "Psychology", "name_ar": "علم النفس",
+      "profile": {
+        "int_human_behavior": [0.9, 3], "int_helping_people": [0.7, 2], "int_life_science": [0.5, 1],
+        "sk_communication": [0.7, 2], "sk_logical": [0.5, 1],
+        "pref_people": [0.9, 2],
+        "val_impact": [0.7, 2], "val_discovery": [0.6, 1],
+        "learn_reading": [0.7, 2]
+      }
+    },
+    "law": {
+      "family": "business_law", "name_en": "Law", "name_ar": "القانون",
+      "profile": {
+        "int_language_communication": [0.8, 3], "int_human_behavior": [0.6, 1],
+        "sk_communication": [0.9, 3], "sk_logical": [0.7, 2], "sk_organization": [0.6, 1],
+        "pref_people": [0.7, 1], "pref_structure": [0.6, 1],
+        "val_impact": [0.6, 1],
+        "learn_reading": [0.9, 3]
+      }
+    },
+    "media": {
+      "family": "creative_communication", "name_en": "Media and Communication", "name_ar": "الإعلام والاتصال",
+      "profile": {
+        "int_language_communication": [0.9, 3], "int_art_design": [0.6, 1],
+        "sk_communication": [0.8, 3], "sk_creativity": [0.7, 2],
+        "pref_people": [0.7, 1], "pref_structure": [0.3, 1], "pref_novelty": [0.8, 2],
+        "learn_doing": [0.7, 1]
+      }
+    },
+    "education": {
+      "family": "people_human", "name_en": "Education", "name_ar": "التربية والتعليم",
+      "profile": {
+        "int_helping_people": [0.8, 3], "int_language_communication": [0.6, 1],
+        "sk_communication": [0.8, 3], "sk_organization": [0.6, 1],
+        "pref_people": [0.9, 2], "pref_structure": [0.6, 1],
+        "val_impact": [0.8, 2]
+      }
+    },
+    "biotechnology": {
+      "family": "health_life", "name_en": "Biotechnology", "name_ar": "التقنية الحيوية",
+      "profile": {
+        "int_life_science": [0.9, 3], "int_physical_science": [0.6, 2],
+        "sk_logical": [0.6, 1], "sk_organization": [0.7, 1],
+        "pref_hands_on": [0.7, 2],
+        "val_discovery": [0.8, 2],
+        "learn_doing": [0.7, 1]
+      }
+    },
+    "environmental_science": {
+      "family": "health_life", "name_en": "Environmental Science", "name_ar": "علوم البيئة",
+      "profile": {
+        "int_life_science": [0.7, 2], "int_physical_science": [0.6, 1], "int_helping_people": [0.5, 1],
+        "pref_hands_on": [0.7, 2], "pref_novelty": [0.6, 1],
+        "val_impact": [0.8, 3], "val_discovery": [0.6, 1],
+        "learn_doing": [0.7, 1]
+      }
+    },
+    "mathematics": {
+      "family": "pure_science", "name_en": "Mathematics", "name_ar": "الرياضيات",
+      "profile": {
+        "int_mathematics": [0.9, 3],
+        "sk_math": [0.9, 3], "sk_logical": [0.9, 3],
+        "pref_independence": [0.7, 1], "pref_hands_on": [0.2, 2],
+        "val_discovery": [0.7, 2],
+        "learn_problems": [0.8, 2], "learn_reading": [0.6, 1]
+      }
+    },
+    "physical_sciences": {
+      "family": "pure_science", "name_en": "Physics and Chemistry", "name_ar": "الفيزياء والكيمياء",
+      "profile": {
+        "int_physical_science": [0.9, 3], "int_mathematics": [0.7, 2],
+        "sk_math": [0.7, 2], "sk_logical": [0.7, 2],
+        "val_discovery": [0.8, 2],
+        "learn_problems": [0.7, 1], "learn_doing": [0.6, 1]
+      }
+    }
+  }
+}

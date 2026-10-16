@@ -1,0 +1,25 @@
+{
+  "name": "career-explorer-js",
+  "version": "0.2.0",
+  "description": "Bilingual (Arabic/English) career and academic-field exploration prototype for students in the Arab world. Transparent scoring plus optional Gemini-written explanations.",
+  "private": true,
+  "license": "UNLICENSED",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "smoke": "node scripts/smoke.js",
+    "check-ai": "node scripts/check-gemini.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0"
+  }
+}
