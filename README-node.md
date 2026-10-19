@@ -32,6 +32,7 @@ and career fields that may fit their interests, strengths and preferences.
 14. [Customising](#14-customising)
 15. [Troubleshooting](#15-troubleshooting)
 16. [Limitations](#16-limitations)
+17. [Deploying to Vercel](#17-deploying-to-vercel)
 
 ---
 
@@ -153,6 +154,8 @@ career-explorer-js/
 │       ├── results.js           builds the results page
 │       └── app.js               language switch, screens, talks to the API
 ├── src/                         the server
+│   ├── index.js                 exports the Express app for Vercel
+│   ├── bootstrap.js             creates the app and loads server configuration
 │   ├── server.js                starts the server (loads .env)
 │   ├── app.js                   builds the Express app (security headers, routes)
 │   ├── config.js                reads environment settings
@@ -280,3 +283,13 @@ After editing the JSON files run `npm test`. It checks that dimensions, language
   Please look at it on a phone and in both languages yourself.
 * Planned for later: a real survey dataset and evaluation, an ML model compared against this baseline, multiple-choice questions, more
   countries and fields, student feedback after choosing a field.
+
+## 17. Deploying to Vercel
+Connect the GitHub repository and deploy the `feat/node-express-application` branch with the project root set to the repository root.
+Vercel serves files in `public/` through its CDN and runs the Express app exported by `src/index.js` as a Function. The root
+`vercel.json` explicitly includes `src/data/` so the questions and scoring JSON files are available to the server in production.
+The browser uses same-origin `/api/...` routes, so no separate API URL or CORS configuration is needed.
+
+For optional AI explanations, add `GEMINI_API_KEY` only in the Vercel project's server-side Environment Variables. Do not add it
+to `vercel.json`, frontend settings, or committed files. The application continues to work with built-in explanations if the
+variable is unset. Deploy a Preview first and verify `/api/health`, `/api/questions`, and `/api/careers` before promoting it.

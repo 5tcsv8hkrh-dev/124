@@ -3,24 +3,7 @@
  * server.js - starts the web server.   Run with:  npm run dev   (or: npm start)
  */
 
-require('dotenv').config(); // reads GEMINI_API_KEY etc. from the .env file (never committed)
-
-const { loadConfig } = require('./config');
-const { loadContent } = require('./services/scoringService');
-const { TemplateExplainer } = require('./services/templateExplainer');
-const { createGeminiService } = require('./services/geminiService');
-const { createApp } = require('./app');
-
-const config = loadConfig();
-const content = loadContent();
-const explainer = new TemplateExplainer(content);
-const gemini = createGeminiService({
-  apiKey: config.geminiApiKey,
-  model: config.geminiModel,
-  timeoutMs: config.geminiTimeoutMs,
-});
-
-const app = createApp({ content, explainer, gemini, config });
+const { app, config, gemini } = require('./bootstrap').createApplication();
 
 app.listen(config.port, () => {
   console.log(`Career Explorer is running:  http://localhost:${config.port}`);

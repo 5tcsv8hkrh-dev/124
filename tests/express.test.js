@@ -67,6 +67,23 @@ test('express: health, questions, careers, website and security headers', { skip
   }
 });
 
+test('express: Vercel entrypoint exports the working API app', { skip }, async () => {
+  const app = require('../src/index');
+  const server = await new Promise((resolve) => {
+    const s = app.listen(0, '127.0.0.1', () => resolve(s));
+  });
+  try {
+    const base = `http://127.0.0.1:${server.address().port}`;
+    const health = await fetch(`${base}/api/health`);
+    assert.equal(health.status, 200);
+    const questions = await fetch(`${base}/api/questions`);
+    assert.equal(questions.status, 200);
+    assert.equal((await questions.json()).questions.length, 27);
+  } finally {
+    server.close();
+  }
+});
+
 test('express: recommendations - valid request, invalid answers, malformed JSON, missing body, too large, unknown path', { skip }, async () => {
   const { server, base, content } = await startServer();
   try {
