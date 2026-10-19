@@ -1,6 +1,6 @@
 'use strict';
 /**
- * wiring.test.js - checks how routes.js and app.js connect things, using tiny stand-ins for
+ * wiring.test.js - checks how routes.js and createApp.js connect things, using tiny stand-ins for
  * express, helmet and express-rate-limit. It always runs (no packages needed) and catches
  * mistakes such as a wrong URL, wrong method, missing limiter or missing security settings.
  * The real packages are exercised by tests/express.test.js when they are installed.
@@ -42,14 +42,14 @@ function withFakes(run) {
     return original.call(this, request, ...rest);
   };
   for (const key of Object.keys(require.cache)) {
-    if (/src[\\/](app|routes[\\/]index)\.js$/.test(key)) delete require.cache[key];
+    if (/src[\\/](createApp|routes[\\/]index)\.js$/.test(key)) delete require.cache[key];
   }
   try {
     return run(log);
   } finally {
     Module._load = original;
     for (const key of Object.keys(require.cache)) {
-      if (/src[\\/](app|routes[\\/]index)\.js$/.test(key)) delete require.cache[key];
+      if (/src[\\/](createApp|routes[\\/]index)\.js$/.test(key)) delete require.cache[key];
     }
   }
 }
@@ -98,7 +98,7 @@ test('rate-limit handler answers with the JSON error shape', () => {
 
 test('app: helmet CSP is strict, upgrade-insecure-requests is off, body size is limited, errors handled last', () => {
   withFakes((log) => {
-    const { createApp } = require('../src/app');
+    const { createApp } = require('../src/createApp');
     createApp(deps);
     const csp = log.helmetOptions.contentSecurityPolicy.directives;
     assert.deepEqual(csp['script-src'], ["'self'"]);

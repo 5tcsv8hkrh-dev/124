@@ -6,7 +6,7 @@ const { loadConfig } = require('./config');
 const { loadContent } = require('./services/scoringService');
 const { TemplateExplainer } = require('./services/templateExplainer');
 const { createGeminiService } = require('./services/geminiService');
-const { createApp } = require('./app');
+const { createApp } = require('./createApp');
 
 function createApplication() {
   const config = loadConfig();

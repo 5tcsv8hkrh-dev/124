@@ -157,7 +157,8 @@ career-explorer-js/
 │   ├── index.js                 exports the Express app for Vercel
 │   ├── bootstrap.js             creates the app and loads server configuration
 │   ├── server.js                starts the server (loads .env)
-│   ├── app.js                   builds the Express app (security headers, routes)
+│   ├── app.js                   Vercel Express entry point
+│   ├── createApp.js             builds the Express app (security headers, routes)
 │   ├── config.js                reads environment settings
 │   ├── routes/                  recommendations.js (handlers), index.js (URLs + rate limits)
 │   ├── services/
@@ -286,7 +287,7 @@ After editing the JSON files run `npm test`. It checks that dimensions, language
 
 ## 17. Deploying to Vercel
 Connect the GitHub repository and deploy the `feat/node-express-application` branch with the project root set to the repository root.
-Vercel serves files in `public/` through its CDN and runs the Express app exported by `src/index.js` as a Function. The root
+Vercel serves files in `public/` through its CDN and runs the Express app exported by `src/app.js` as a Function. The root
 `vercel.json` explicitly includes `src/data/` so the questions and scoring JSON files are available to the server in production.
 The browser uses same-origin `/api/...` routes, so no separate API URL or CORS configuration is needed.
 
