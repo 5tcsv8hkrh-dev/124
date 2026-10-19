@@ -68,6 +68,10 @@ test('express: health, questions, careers, website and security headers', { skip
 });
 
 test('express: Vercel entrypoint exports the working API app', { skip }, async () => {
+  const vercelConfig = require('../vercel.json');
+  assert.equal(vercelConfig.framework, 'express');
+  assert.equal(vercelConfig.functions['src/index.js'].includeFiles, 'src/data/**');
+
   const app = require('../src/index');
   const server = await new Promise((resolve) => {
     const s = app.listen(0, '127.0.0.1', () => resolve(s));
